@@ -1,3 +1,10 @@
-export type PixabayImage = {};
+export interface PixabayImage {
+  webformatURL: string;
+  largeImageURL: string;
+  tags: string;
+};
 
-export type PixabayResponse = {};
+export interface PixabayResponse {
+  totalHits: number;
+  hits: PixabayImage[];
+};
